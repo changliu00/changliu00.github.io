@@ -2,29 +2,158 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="Chang Liu&#39;s home page">
+	<meta name="description" content="Chang Liu&#39;s homepage">
 	<link rel="stylesheet" href="./aux_files/jemdoc.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	<title>Chang Liu</title>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122217266-1"></script>
+	<!-- Google Analytics 4 (GA4)
+		 Replace G-XXXXXXXXXX below with your own GA4 Measurement ID.
+		 You can find it in Google Analytics: Admin -> Data streams -> Web -> Measurement ID.
+	-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0C4ZL6D9F"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-	
-		gtag('config', 'UA-122217266-1');
+
+		gtag('config', 'G-B0C4ZL6D9F');
 	</script>
 
+	<!-- Baidu Tongji / 百度统计
+		 Existing Baidu site token preserved from the previous homepage.
+	-->
 	<script>
-	var _hmt = _hmt || [];
-	(function() {
-		  var hm = document.createElement("script");
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
 			hm.src = "https://hm.baidu.com/hm.js?5597ee31da158ac67bd52e8f1cbc8d93";
-			  var s = document.getElementsByTagName("script")[0];
-				s.parentNode.insertBefore(hm, s);
-	})();
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
 	</script>
+
+	<style>
+
+		/* Research section wrapper: keeps the Research area grouped without putting the tabs inside a box */
+		.research-box {
+			background: transparent;
+			border: none;
+			box-shadow: none;
+			padding: 0;
+			margin: 1.3em 0 1.6em 0;
+		}
+
+		.research-box h2 {
+			margin-top: 0;
+		}
+
+		.research-box .research-links,
+		.research-box .research-note {
+			margin-left: 0.1em;
+		}
+
+		.research-box .research-note {
+			color: #555;
+			font-size: 0.95em;
+		}
+
+
+		/* Research tabs */
+		.research-tabs {
+			margin-top: 0.8em;
+		}
+
+		.research-tab-list {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			gap: 0.55em;
+			margin: 0.2em 0 0 0;
+			padding-left: 0;
+			border-bottom: none;
+			position: relative;
+		}
+
+		/* Shortened baseline below the tabs: inset to avoid crossing the rounded panel corners */
+		.research-tab-list::after {
+			content: "";
+			position: absolute;
+			left: 12px;
+			right: 12px;
+			bottom: 0;
+			border-bottom: 1px solid #d9e1ec;
+			z-index: 0;
+		}
+
+		.research-tab {
+			cursor: pointer;
+			border: 1px solid transparent;
+			border-bottom: none;
+			background: transparent;
+			color: #527bbd;
+			padding: 0.5em 0.85em 0.35em 0.85em;
+			margin-top: 0.7em;
+			margin-bottom: -1px;
+			border-radius: 7px 7px 0 0;
+			font: inherit;
+			font-size: 110%;
+			font-weight: bold;
+			line-height: 1.0;
+			position: relative;
+			z-index: 1;
+		}
+
+		.research-tab:hover,
+		.research-tab:focus {
+			background: #ffffff;
+			color: #224b8d;
+			outline: none;
+		}
+
+		.research-tab[aria-selected="true"] {
+			background: #fbfcff;
+			color: #527bbd;
+			border-color: #d9e1ec;
+			border-bottom-color: #fbfcff;
+			box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.03);
+			z-index: 3;
+		}
+
+		.research-tab-panel {
+			display: none;
+		}
+
+		.research-tab-panel.active {
+			display: block;
+			background: linear-gradient(180deg, #fbfcff 0%, #f6f8fb 100%);
+			border: 1px solid #d9e1ec;
+			border-radius: 12px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+			padding: 1.1em 1.25em 1.25em 1.25em;
+			margin-top: -1px;
+		}
+
+		.research-tab-panel > h3:first-child,
+		.research-tab-panel > h4:first-child {
+			margin-top: 0;
+		}
+
+		/* Link icons */
+		.link-icon {
+			display: inline-block;
+			width: 1.15em;
+			margin-right: 0.18em;
+			text-align: center;
+			color: #555;
+		}
+
+		a:hover .link-icon {
+			color: inherit;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -50,6 +179,12 @@
 					<del>changliu at microsoft dot com</del>
 					<!--<del>chang-li14 at mails dot tsinghua dot edu dot cn</del>-->
 				</p>
+
+				<p class="research-links">
+				[<a href="https://scholar.google.com/citations?user=rYd0GEsAAAAJ&hl=en"><span class="link-icon" aria-hidden="true"><i class="ai ai-google-scholar"></i></span>Google Scholar</a>]
+				[<a href="https://github.com/changliu00"><span class="link-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>GitHub</a>]
+				[<a href="https://www.semanticscholar.org/author/Chang-Liu/1692867"><span class="link-icon" aria-hidden="true"><i class="ai ai-semantic-scholar"></i></span>Semantic Scholar</a>]
+				</p>
 			</td>
 			<td>
 				<img src="./aux_files/ChangLiu.png" border="0" width="210">
@@ -59,7 +194,7 @@
 	</tbody>
 </table>
 
-<h2>Biography</h2>
+<!-- <h2>Biography</h2> -->
 	<!-- <p>
 	[<a href="./static/CV-ChangLiu.pdf">Curriculum Vitae</a>]
 	</p> -->
@@ -85,16 +220,19 @@
 	<!-- [>I have published over 20 papers in top-tier conferences and journals, including ICML, NeurIPS,  ICLR, Nat. Comput. Sci. and Nat. Mach. Intell. He has served as reviewer and area chair for major AI conferences.<] -->
 	<!-- </p> -->
 
-<h2>Research</h2>
-	<p>
-	[<a href="https://scholar.google.com/citations?user=rYd0GEsAAAAJ&hl=en">Google Scholar</a>]
-	[<a href="https://github.com/changliu00">GitHub</a>]
-	[<a href="https://www.semanticscholar.org/author/Chang-Liu/1692867">Semantic Scholar</a>]
-	</p>
+<div class="research-box" id="research">
+<!-- <h2>Research</h2> -->
 
-<p>("*": corresponding author; "†": equal contribution)</p>
+<!-- <p class="research-note">("*": corresponding author; "†": equal contribution)</p> -->
 
-<h3>Selected Publications</h3>
+<div class="research-tabs">
+	<div class="research-tab-list" role="tablist" aria-label="Research sections">
+		<button type="button" class="research-tab active" id="research-tab-selected-publications" role="tab" aria-selected="true" aria-controls="research-panel-selected-publications" tabindex="0">Selected Publications</button>
+		<button type="button" class="research-tab" id="research-tab-full-publication-list" role="tab" aria-selected="false" aria-controls="research-panel-full-publication-list" tabindex="-1">Full Publication List</button>
+		<button type="button" class="research-tab" id="research-tab-thesis" role="tab" aria-selected="false" aria-controls="research-panel-thesis" tabindex="-1">Thesis</button>
+	</div>
+	<section class="research-tab-panel active" id="research-panel-selected-publications" role="tabpanel" aria-labelledby="research-tab-selected-publications">
+<!-- <h3>Selected Publications</h3> -->
 
 <h4>Generative Models</h4>
 <ul>
@@ -102,31 +240,31 @@
 		<a href="https://openreview.net/forum?id=3JPAkwSVc4">Quotient-Space Diffusion Models</a>.<br>
 		Yixian Xu†, Yusong Wang†, Shengjie Luo, Kaiyuan Gao, Tianyu He, Di He*, <b>Chang Liu</b>*.
 		<i>International Conference on Learning Representations (ICLR; <b>Oral, Top 0.26%</b>)</i>, 2026.<br>
-		[<a href="https://arxiv.org/pdf/2604.21809">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2604.21809">arXiv</a>]
-		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-slides.pdf">Slides</a>]
-		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-poster.pdf">Poster</a>]
-		[<a href="./bibtex/xu2026quotientspace.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2604.21809"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2604.21809"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/xu2026quotientspace.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
 	<li>
 		<a href="https://openreview.net/forum?id=X7JfjLKKLQ">Diagnosing and Improving Diffusion Models by Estimating the Optimal Loss Value</a>.<br>
 		Yixian Xu†, Shengjie Luo†, Liwei Wang, Di He*, <b>Chang Liu</b>*.
 		<i>International Conference on Learning Representations (ICLR; <b>Top 0.88%</b>)</i>, 2026.<br>
-		[<a href="https://arxiv.org/pdf/2506.13763">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2506.13763">arXiv</a>]
-		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-slides.pdf">Slides</a>]
-		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-poster.pdf">Poster</a>]
-		[<a href="./bibtex/xu2026diagnosing.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2506.13763"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2506.13763"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/xu2026diagnosing.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
     <li>
 		<a href="https://openreview.net/forum?id=GnF9tavqgc">Physical Consistency Bridges Heterogeneous Data in Molecular Multi-Task Learning</a>.<br>
 		Yuxuan Ren†, Dihan Zheng†, <b>Chang Liu</b>*, Peiran Jin, Yu Shi, Lin Huang, Jiyan He, Shengjie Luo, Tao Qin, Tie-Yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2024.<br>
-		[<a href="https://arxiv.org/abs/2410.10118">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2410.10118">arXiv</a>]
-		[<a href="./eng-stru-csis/eng-stru-csis-slides.pdf">Slides</a>]
-		[<a href="./eng-stru-csis/eng-stru-csis-poster.pdf">Poster</a>]
-		[<a href="./bibtex/ren2024physical.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/abs/2410.10118"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2410.10118"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./eng-stru-csis/eng-stru-csis-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./eng-stru-csis/eng-stru-csis-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/ren2024physical.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://www.nature.com/articles/s42256-024-00837-3">Predicting Equilibrium Distributions for Molecular Systems with Deep Learning</a>.<br>
@@ -134,40 +272,40 @@
 		Weitao Feng, Fusong Ju, Jiaxi Wang, Jianwei Zhu, Yaosen Min, He Zhang, Shidi Tang, Hongxia Hao, Peiran Jin, Chi Chen, Frank Noé,
 		Haiguang Liu†*, Tie-Yan Liu*.
 		<i>Nature Machine Intelligence</i>, 2024.<br>
-		[<a href="https://www.nature.com/articles/s42256-024-00837-3.pdf">Paper</a>]
-		[<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs42256-024-00837-3/MediaObjects/42256_2024_837_MOESM1_ESM.pdf">Supplementary Information</a>]
-		[<a href="https://arxiv.org/abs/2306.05445">arXiv</a>]
-		[<a href="https://distributionalgraphormer.github.io/">Project Homepage</a>]
-		[<a href="./dig/DiG-slides.pdf">Slides</a>]
-		[<a href="./bibtex/zheng2024predicting.bib">BibTeX</a>]
+		[<a href="https://www.nature.com/articles/s42256-024-00837-3.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs42256-024-00837-3/MediaObjects/42256_2024_837_MOESM1_ESM.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Supplementary Information</a>]
+		[<a href="https://arxiv.org/abs/2306.05445"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://distributionalgraphormer.github.io/"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span>Project Homepage</a>]
+		[<a href="./dig/DiG-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./bibtex/zheng2024predicting.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://papers.nips.cc/paper/2021/hash/fe04e05fbe48920b8ba90bea2ddfe60b-Abstract.html">On the Generative Utility of Cyclic Conditionals</a>.<br>
 		<b>Chang Liu</b>*, Haoyue Tang, Tao Qin, Jintao Wang, Tie-Yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2021.<br>
 		<!--<i>arXiv prepint</i>, 2021. <b>(Updated Aug. 3, 2021)</b><br>-->
-		[<a href="./cygen/cygen.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2106.15962">arXiv</a>]
-		[<a href="https://github.com/changliu00/cygen">Code</a>]
-		[<a href="./cygen/cygen-slides.pdf">Slides</a>]
-		[<a href="./cygen/cygen-poster.pdf">Poster</a>]
-		[<a href="https://recorder-v3.slideslive.com/?share=52410&s=7530b180-ebd9-4e7b-9f11-37503185c774">Video</a>]
-		[<a href="https://mp.weixin.qq.com/s/8XyECFy6twCFTnT4g0lsoQ">Media (Chinese)</a>]
-		[<a href="./bibtex/liu2021generative.bib">BibTeX</a>]
+		[<a href="./cygen/cygen.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2106.15962"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/cygen"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./cygen/cygen-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./cygen/cygen-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="https://recorder-v3.slideslive.com/?share=52410&s=7530b180-ebd9-4e7b-9f11-37503185c774"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></span>Video</a>]
+		[<a href="https://mp.weixin.qq.com/s/8XyECFy6twCFTnT4g0lsoQ"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-newspaper"></i></span>Media (Chinese)</a>]
+		[<a href="./bibtex/liu2021generative.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://papers.nips.cc/paper/2021/hash/310614fca8fb8e5491295336298c340f-Abstract.html">Learning Causal Semantic Representation for Out-of-Distribution Prediction</a>.<br>
 		<b>Chang Liu</b>*, Xinwei Sun, Jindong Wang, Haoyue Tang, Tao Li, Tao Qin, Wei Chen, Tie-Yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2021.<br>
 		<!--<i>arXiv prepint</i>, 2020. <b>(Updated Jun. 17, 2021)</b><br>-->
-		[<a href="./causupv/causupv.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2011.01681">arXiv</a>]
-		[<a href="https://github.com/changliu00/causal-semantic-generative-model">Code</a>]
-		[<a href="./causupv/causupv-slides.pdf">Slides</a>]
-		[<a href="./causupv/causupv-poster.pdf">Poster</a>]
-		[<a href="https://recorder-v3.slideslive.com/?share=52713&s=7a03cf16-4993-4e27-8502-7461239c487d">Video</a>]
-		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw">Media (Chinese)</a>]
-		[<a href="./bibtex/liu2021learning.bib">BibTeX</a>]
+		[<a href="./causupv/causupv.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2011.01681"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/causal-semantic-generative-model"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./causupv/causupv-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./causupv/causupv-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="https://recorder-v3.slideslive.com/?share=52713&s=7a03cf16-4993-4e27-8502-7461239c487d"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></span>Video</a>]
+		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-newspaper"></i></span>Media (Chinese)</a>]
+		[<a href="./bibtex/liu2021learning.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 </ul>
 
@@ -177,23 +315,23 @@
 		<a href="https://openreview.net/forum?id=Vw4Yar2fmW">Self-Consistency Training for Density-Functional-Theory Hamiltonian Prediction</a>.<br>
 		He Zhang, <b>Chang Liu</b>*, Zun Wang, Xinran Wei, Siyuan Liu, Nanning Zheng*, Bin Shao, Tie-Yan Liu.
 		<i>International Conference on Machine Learning (ICML)</i>, 2024.<br>
-		[<a href="https://arxiv.org/pdf/2403.09560">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2403.09560">arXiv</a>]
-		[<a href="./h-self-con/H-self-con-slides.pdf">Slides</a>]
-		[<a href="./h-self-con/H-self-con-poster.pdf">Poster</a>]
-		[<a href="./bibtex/zhang2024selfconsistency.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2403.09560"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2403.09560"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./h-self-con/H-self-con-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./h-self-con/H-self-con-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/zhang2024selfconsistency.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://www.nature.com/articles/s43588-024-00605-8">Overcoming the Barrier of Orbital-Free Density Functional Theory for Molecular Systems Using Deep Learning</a>.<br>
 		He Zhang†, Siyuan Liu†, Jiacheng You, <b>Chang Liu</b>*, Shuxin Zheng*, Ziheng Lu, Tong Wang, Nanning Zheng, Bin Shao*.
 		<i>Nature Computational Science</i>, 2024.<br>
-		[<a href="https://rdcu.be/dANtS">Full-text access</a>]
-		[<a href="https://arxiv.org/abs/2309.16578">arXiv</a>]
-		[<a href="https://zenodo.org/doi/10.5281/zenodo.10616893">Code (inference)</a>]
-		[<a href="https://figshare.com/collections/Overcoming_the_Barrier_of_Orbital-Free_Density_Functional_Theory_in_Molecular_Systems_Using_Deep_Learning/6877432/1">Model checkpoints & evaluation data</a>]
-		[<a href="./m-ofdft/M-OFDFT-slides.pdf">Slides</a>]
-		[<a href="https://www.microsoft.com/en-us/research/podcast/abstracts-march-21-2024">Podcast</a>]
-		[<a href="./bibtex/zhang2024overcoming.bib">BibTeX</a>]
+		[<a href="https://rdcu.be/dANtS"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Full-text access</a>]
+		[<a href="https://arxiv.org/abs/2309.16578"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://zenodo.org/doi/10.5281/zenodo.10616893"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code (inference)</a>]
+		[<a href="https://figshare.com/collections/Overcoming_the_Barrier_of_Orbital-Free_Density_Functional_Theory_in_Molecular_Systems_Using_Deep_Learning/6877432/1"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-database"></i></span>Model checkpoints & evaluation data</a>]
+		[<a href="./m-ofdft/M-OFDFT-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="https://www.microsoft.com/en-us/research/podcast/abstracts-march-21-2024"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-podcast"></i></span>Podcast</a>]
+		[<a href="./bibtex/zhang2024overcoming.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 </ul>
 
@@ -204,66 +342,68 @@
 		<!--(free <a href="https://authors.elsevier.com/a/1foRZcbiTAXmg">access link</a> before Nov. 12).<br>-->
 		<b>Chang Liu</b>, Jun Zhu.
 		<i>Advancements in Bayesian Methods and Implementation</i>, in Handbook of Statistics (vol. 47), Elsevier, 2022.<br>
-		[<a href="./static/Geometry in sampling methods - public.pdf">Full-text paper</a>]
-		[<a href="./bibtex/liu2022geometry.bib">BibTeX</a>]
+		[<a href="./static/Geometry in sampling methods - public.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Full-text paper</a>]
+		[<a href="./bibtex/liu2022geometry.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
     <li>
 		<a href="https://arxiv.org/abs/2106.12506">Sampling with Mirrored Stein Operators</a>.<br>
 		Jiaxin Shi, <b>Chang Liu</b>, Lester Mackey.
 		<i>International Conference on Learning Representations (ICLR; <b>Spotlight, Top 2.7%</b>)</i>, 2022.<br>
-		[<a href="https://arxiv.org/pdf/2106.12506.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2106.12506">arXiv</a>]
-		[<a href="https://github.com/thjashin/mirror-stein-samplers">Code</a>]
-		[<a href="https://thjashin.github.io/talks/mirror-stein-samplers.pdf">Slides</a>]
-		[<a href="./bibtex/shi2022sampling.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2106.12506.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2106.12506"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/thjashin/mirror-stein-samplers"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="https://thjashin.github.io/talks/mirror-stein-samplers.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./bibtex/shi2022sampling.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="http://proceedings.mlr.press/v97/liu19j.html">Understanding MCMC Dynamics as Flows on the Wasserstein Space</a>.<br>
 		<b>Chang Liu</b>, Jingwei Zhuo, Jun Zhu.
 		<i>International Conference on Machine Learning (ICML)</i>, 2019.<br>
-		[<a href="./hgf/hgf.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/1902.00282">arXiv</a>]
-		[<a href="https://github.com/changliu00/FGH-flow">Code</a>]
-		[<a href="./hgf/hgf_beamer.pdf">Slides</a>]
-		[<a href="./hgf/hgf_poster.pdf">Poster</a>]
-		[<a href="./bibtex/liu2019understanding_b.bib">BibTeX</a>]
+		[<a href="./hgf/hgf.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/1902.00282"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/FGH-flow"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./hgf/hgf_beamer.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./hgf/hgf_poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/liu2019understanding_b.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="http://proceedings.mlr.press/v97/liu19i.html">Understanding and Accelerating Particle-Based Variational Inference</a>.<br>
 		<b>Chang Liu</b>, Jingwei Zhuo, Pengyu Cheng, Ruiyi Zhang, Jun Zhu, Lawrence Carin.
 		<i>International Conference on Machine Learning (ICML)</i>, 2019.<br>
-		[<a href="./awgf/AWGF.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/1807.01750">arXiv</a>]
-		[<a href="https://github.com/changliu00/AWGF">Code</a>]
-		[<a href="./awgf/AWGF_beamer.pdf">Slides</a>]
-		[<a href="./awgf/AWGF_poster.pdf">Poster</a>]
-		[<a href="./bibtex/liu2019understanding_a.bib">BibTeX</a>]
+		[<a href="./awgf/AWGF.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/1807.01750"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/AWGF"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./awgf/AWGF_beamer.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./awgf/AWGF_poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/liu2019understanding_a.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 </ul>
+	</section>
 
-<h3>Full Publication List</h3>
+	<section class="research-tab-panel" id="research-panel-full-publication-list" role="tabpanel" aria-labelledby="research-tab-full-publication-list" hidden>
+<!-- <h3>Full Publication List</h3> -->
 
 <h4>Preprints</h4>
 <ul>
 	<li>
 		<a href="https://arxiv.org/abs/2604.27636">Generative structure search for efficient and diverse discovery of molecular and crystal structures</a>.<br>
 		Yifang Qin, Yu Shi, Junfu Tan, <b>Chang Liu</b>*, Ming Zhang*, Ziheng Lu*.<br>
-		[<a href="https://arxiv.org/pdf/2604.27636">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2604.27636">arXiv</a>]
+		[<a href="https://arxiv.org/pdf/2604.27636"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2604.27636"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
 	</li>
 	<li>
 		<a href="https://arxiv.org/abs/2502.07527">NatureLM: Deciphering the Language of Nature for Scientific Discovery</a>.<br>
 		Yingce Xia†, Peiran Jin†, Shufang Xie†, Liang He†, Chuan Cao†, Renqian Luo†, Guoqing Liu†, Yue Wang†, Zequn Liu†, Yuan-Jyue Chen†, Zekun Guo†, Yeqi Bai, Pan Deng, Yaosen Min, Ziheng Lu, Hongxia Hao, Han Yang, Jielan Li, <b>Chang Liu</b>, Jia Zhang, Jianwei Zhu, Kehan Wu, Wei Zhang, Kaiyuan Gao, Qizhi Pei, Qian Wang, Xixian Liu, Yanting Li, Houtian Zhu, Yeqing Lu, Mingqian Ma, Zun Wang, Tian Xie, Krzysztof Maziarz, Marwin Segler, Zhao Yang, Zilong Chen, Yu Shi, Shuxin Zheng, Lijun Wu, Chen Hu, Peggy Dai, Tie-Yan Liu, Haiguang Liu, Tao Qin. 2025.<br>
-		[<a href="https://arxiv.org/pdf/2502.07527">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2502.07527">arXiv</a>]
+		[<a href="https://arxiv.org/pdf/2502.07527"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2502.07527"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
 	</li>
 	<li>
 		<a href="https://arxiv.org/abs/2405.04967">MatterSim: A Deep Learning Atomistic Model Across Elements, Temperatures and Pressures</a>.<br>
 		Han Yang†, Chenxi Hu†, Yichi Zhou†, Xixian Liu†, Yu Shi†, Jielan Li†, Guanzhi Li†, Zekun Chen†, Shuizhou Chen†,
 		Claudio Zeni, Matthew Horton, Robert Pinsler, Andrew Fowler, Daniel Zügner, Tian Xie, Jake Smith, Lixin Sun, Qian Wang, Lingyu Kong, <b>Chang Liu</b>,
 		Hongxia Hao, Ziheng Lu. 2024.<br>
-		[<a href="https://arxiv.org/pdf/2405.04967">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2405.04967">arXiv</a>]
+		[<a href="https://arxiv.org/pdf/2405.04967"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2405.04967"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
 	</li>
 </ul>
 
@@ -273,28 +413,28 @@
 		<a href="https://openreview.net/forum?id=3JPAkwSVc4">Quotient-Space Diffusion Models</a>.<br>
 		Yixian Xu†, Yusong Wang†, Shengjie Luo, Kaiyuan Gao, Tianyu He, Di He*, <b>Chang Liu</b>*.
 		<i>International Conference on Learning Representations (ICLR; <b>Oral, Top 0.26%</b>)</i>, 2026.<br>
-		[<a href="https://arxiv.org/pdf/2604.21809">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2604.21809">arXiv</a>]
-		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-slides.pdf">Slides</a>]
-		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-poster.pdf">Poster</a>]
-		[<a href="./bibtex/xu2026quotientspace.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2604.21809"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2604.21809"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./quotient-space-diffusion/quotient_space_diffusion_model-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/xu2026quotientspace.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
 	<li>
 		<a href="https://openreview.net/forum?id=X7JfjLKKLQ">Diagnosing and Improving Diffusion Models by Estimating the Optimal Loss Value</a>.<br>
 		Yixian Xu†, Shengjie Luo†, Liwei Wang, Di He*, <b>Chang Liu</b>*.
 		<i>International Conference on Learning Representations (ICLR; <b>Top 0.88%</b>)</i>, 2026.<br>
-		[<a href="https://arxiv.org/pdf/2506.13763">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2506.13763">arXiv</a>]
-		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-slides.pdf">Slides</a>]
-		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-poster.pdf">Poster</a>]
-		[<a href="./bibtex/xu2026diagnosing.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2506.13763"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2506.13763"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./diffusion-opt-loss/diffusion_optimal_loss-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/xu2026diagnosing.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
 	<li>
 		<a href="https://openreview.net/forum?id=B8BXHrshMi">FlexRibbon: Joint Sequence and Structure Pretraining for Protein Modeling</a>.<br>
 		Jianwei Zhu†, Yu Shi†, Ran Bi†, Peiran Jin†*, <b>Chang Liu</b>†*, Zhe Zhang†, Haitao Huang, Zekun Guo, Pipi Hu, Fusong Ju, Lin Huang, Xinran Tai, Chenao Li, Kaiyuan Gao, Xinran Wei, Huanhuan Xia, Jia Zhang, Yaosen Min, Zun Wang, Yusong Wang, Liang He, Haiguang Liu*, Tao Qin*.
 		<i>International Conference on Learning Representations (ICLR)</i>, 2026.<br>
-		[<a href="https://openreview.net/pdf?id=B8BXHrshMi">Paper & Appendix</a>]
-		[<a href="https://www.biorxiv.org/content/10.1101/2025.10.08.681293">bioRxiv</a>]
+		[<a href="https://openreview.net/pdf?id=B8BXHrshMi"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://www.biorxiv.org/content/10.1101/2025.10.08.681293"><span class="link-icon" aria-hidden="true"><i class="ai ai-biorxiv"></i></span>bioRxiv</a>]
 	</li>
 </ul>
 
@@ -304,37 +444,37 @@
 		<a href="https://www.nature.com/articles/s41556-025-01755-1">CellNavi Predicts Genes Directing Cellular Transitions by Learning a Gene Graph-Enhanced Cell State Manifold</a>.<br>
 		Tianze Wang†, Yan Pan†, Fusong Ju†, Shuxin Zheng†, <b>Chang Liu</b>†, Yaosen Min, Xinwei Liu, Huanhuan Xia, Guoqing Liu, Haiguang Liu, Pan Deng*.
 		<i>Nature Cell Biology</i>, 2025.<br>
-		[<a href="https://www.nature.com/articles/s41556-025-01755-1.pdf">Paper</a>]
-		[<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41556-025-01755-1/MediaObjects/41556_2025_1755_MOESM1_ESM.pdf">Appendix</a>]
-		[<a href="https://www.biorxiv.org/content/10.1101/2024.10.27.620174v1.abstract">bioRxiv</a>]
+		[<a href="https://www.nature.com/articles/s41556-025-01755-1.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41556-025-01755-1/MediaObjects/41556_2025_1755_MOESM1_ESM.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Appendix</a>]
+		[<a href="https://www.biorxiv.org/content/10.1101/2024.10.27.620174v1.abstract"><span class="link-icon" aria-hidden="true"><i class="ai ai-biorxiv"></i></span>bioRxiv</a>]
 	</li>
 	<li>
 		<a href="https://openreview.net/forum?id=tTdzbnvTno">Potential Score Matching: Debiasing Molecular Structure Sampling with Potential Energy Guidance</a>.<br>
 		Liya Guo, Zun Wang, <b>Chang Liu</b>*, Junzhe Li, Pipi Hu*, Yi Zhu*, Tao Qin.
 		<i>Transactions on Machine Learning Research (TMLR)</i>, 2025.<br>
-		[<a href="https://openreview.net/pdf?id=tTdzbnvTno">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2503.14569">arXiv</a>]
+		[<a href="https://openreview.net/pdf?id=tTdzbnvTno"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2503.14569"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
 	</li>
 	<li>
 		<a href="https://openreview.net/forum?id=ls5L4IMEwt">E2Former: An Efficient and Equivariant Transformer with Linear-Scaling Tensor Products</a>.<br>
 		Yunyang Li, Lin Huang, Zhihao Ding, Xinran Wei, Chu Wang, Han Yang, Zun Wang, <b>Chang Liu</b>, Yu Shi, Peiran Jin, Tao Qin, Mark Gerstein, Jia Zhang.
 		<i>Neural Information Processing Systems (NeurIPS; <b>Spotlight, Top 0.28%</b>)</i>, 2025.<br>
-		[<a href="https://openreview.net/pdf?id=ls5L4IMEwt">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2501.19216">arXiv</a>]
+		[<a href="https://openreview.net/pdf?id=ls5L4IMEwt"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2501.19216"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
 	</li>
     <li>
 		<a href="https://openreview.net/forum?id=K3lykWhXON">Efficient and Scalable Density Functional Theory Hamiltonian Prediction through Adaptive Sparsity</a>.<br>
 		Erpai Luo†, Xinran Wei†, Lin Huang, Yunyang Li, Han Yang, Zaishuo Xia, Zun Wang, <b>Chang Liu</b>, Bin Shao, Jia Zhang.
 		<i>International Conference on Machine Learning (ICML)</i>, 2025.<br>
-		[<a href="https://arxiv.org/pdf/2502.01171">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2502.01171">arXiv</a>]
+		[<a href="https://arxiv.org/pdf/2502.01171"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2502.01171"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
     </li>
     <li>
 		<a href="https://openreview.net/forum?id=twEvvkQqPS">Enhancing the Scalability and Applicability of Kohn-Sham Hamiltonians for Molecular Systems</a>.<br>
 		Yunyang Li†, Zaishuo Xia†, Lin Huang†, Xinran Wei, Han Yang, Sam Harshe, Zun Wang, <b>Chang Liu</b>, Jia Zhang, Bin Shao, Mark B. Gerstein.
 		<i>International Conference on Learning Representations (ICLR; <b>Spotlight; Top 1.0%</b>)</i>, 2025.<br>
-		[<a href="https://arxiv.org/pdf/2502.19227">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2502.19227">arXiv</a>]
+		[<a href="https://arxiv.org/pdf/2502.19227"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2502.19227"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
     </li>
 </ul>
 
@@ -344,28 +484,28 @@
 		<a href="https://openreview.net/forum?id=GnF9tavqgc">Physical Consistency Bridges Heterogeneous Data in Molecular Multi-Task Learning</a>.<br>
 		Yuxuan Ren†, Dihan Zheng†, <b>Chang Liu</b>*, Peiran Jin, Yu Shi, Lin Huang, Jiyan He, Shengjie Luo, Tao Qin, Tie-Yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2024.<br>
-		[<a href="https://arxiv.org/abs/2410.10118">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2410.10118">arXiv</a>]
-		[<a href="./eng-stru-csis/eng-stru-csis-slides.pdf">Slides</a>]
-		[<a href="./eng-stru-csis/eng-stru-csis-poster.pdf">Poster</a>]
-		[<a href="./bibtex/ren2024physical.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/abs/2410.10118"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2410.10118"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./eng-stru-csis/eng-stru-csis-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./eng-stru-csis/eng-stru-csis-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/ren2024physical.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://openreview.net/forum?id=PSVkinBs4u">Infusing Self-Consistency into Density Functional Theory Hamiltonian Prediction via Deep Equilibrium Models</a>.<br>
 		Zun Wang, <b>Chang Liu</b>, Nianlong Zou, He Zhang, Xinran Wei, Lin Huang, Lijun Wu, Bin Shao.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2024.<br>
-		[<a href="https://arxiv.org/abs/2406.03794">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2406.03794">arXiv</a>]
+		[<a href="https://arxiv.org/abs/2406.03794"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2406.03794"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
     </li>
     <li>
 		<a href="https://openreview.net/forum?id=Vw4Yar2fmW">Self-Consistency Training for Density-Functional-Theory Hamiltonian Prediction</a>.<br>
 		He Zhang, <b>Chang Liu</b>*, Zun Wang, Xinran Wei, Siyuan Liu, Nanning Zheng*, Bin Shao, Tie-Yan Liu.
 		<i>International Conference on Machine Learning (ICML)</i>, 2024.<br>
-		[<a href="https://arxiv.org/pdf/2403.09560">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2403.09560">arXiv</a>]
-		[<a href="./h-self-con/H-self-con-slides.pdf">Slides</a>]
-		[<a href="./h-self-con/H-self-con-poster.pdf">Poster</a>]
-		[<a href="./bibtex/zhang2024selfconsistency.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2403.09560"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2403.09560"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./h-self-con/H-self-con-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./h-self-con/H-self-con-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/zhang2024selfconsistency.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://www.nature.com/articles/s42256-024-00837-3">Predicting Equilibrium Distributions for Molecular Systems with Deep Learning</a>.<br>
@@ -373,24 +513,24 @@
 		Weitao Feng, Fusong Ju, Jiaxi Wang, Jianwei Zhu, Yaosen Min, He Zhang, Shidi Tang, Hongxia Hao, Peiran Jin, Chi Chen, Frank Noé,
 		Haiguang Liu†*, Tie-Yan Liu*.
 		<i>Nature Machine Intelligence</i>, 2024.<br>
-		[<a href="https://www.nature.com/articles/s42256-024-00837-3.pdf">Paper</a>]
-		[<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs42256-024-00837-3/MediaObjects/42256_2024_837_MOESM1_ESM.pdf">Supplementary Information</a>]
-		[<a href="https://arxiv.org/abs/2306.05445">arXiv</a>]
-		[<a href="https://distributionalgraphormer.github.io/">Project Homepage</a>]
-		[<a href="./dig/DiG-slides.pdf">Slides</a>]
-		[<a href="./bibtex/zheng2024predicting.bib">BibTeX</a>]
+		[<a href="https://www.nature.com/articles/s42256-024-00837-3.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs42256-024-00837-3/MediaObjects/42256_2024_837_MOESM1_ESM.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Supplementary Information</a>]
+		[<a href="https://arxiv.org/abs/2306.05445"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://distributionalgraphormer.github.io/"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span>Project Homepage</a>]
+		[<a href="./dig/DiG-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./bibtex/zheng2024predicting.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://www.nature.com/articles/s43588-024-00605-8">Overcoming the Barrier of Orbital-Free Density Functional Theory for Molecular Systems Using Deep Learning</a>.<br>
 		He Zhang†, Siyuan Liu†, Jiacheng You, <b>Chang Liu</b>*, Shuxin Zheng*, Ziheng Lu, Tong Wang, Nanning Zheng, Bin Shao*.
 		<i>Nature Computational Science</i>, 2024.<br>
-		[<a href="https://rdcu.be/dANtS">Full-text access</a>]
-		[<a href="https://arxiv.org/abs/2309.16578">arXiv</a>]
-		[<a href="https://zenodo.org/doi/10.5281/zenodo.10616893">Code (inference)</a>]
-		[<a href="https://figshare.com/collections/Overcoming_the_Barrier_of_Orbital-Free_Density_Functional_Theory_in_Molecular_Systems_Using_Deep_Learning/6877432/1">Model checkpoints & evaluation data</a>]
-		[<a href="./m-ofdft/M-OFDFT-slides.pdf">Slides</a>]
-		[<a href="https://www.microsoft.com/en-us/research/podcast/abstracts-march-21-2024">Podcast</a>]
-		[<a href="./bibtex/zhang2024overcoming.bib">BibTeX</a>]
+		[<a href="https://rdcu.be/dANtS"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Full-text access</a>]
+		[<a href="https://arxiv.org/abs/2309.16578"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://zenodo.org/doi/10.5281/zenodo.10616893"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code (inference)</a>]
+		[<a href="https://figshare.com/collections/Overcoming_the_Barrier_of_Orbital-Free_Density_Functional_Theory_in_Molecular_Systems_Using_Deep_Learning/6877432/1"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-database"></i></span>Model checkpoints & evaluation data</a>]
+		[<a href="./m-ofdft/M-OFDFT-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="https://www.microsoft.com/en-us/research/podcast/abstracts-march-21-2024"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-podcast"></i></span>Podcast</a>]
+		[<a href="./bibtex/zhang2024overcoming.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 </ul>
 
@@ -400,10 +540,10 @@
 		<a href="https://link.springer.com/article/10.1007/s11263-022-01688-4">Invertible Rescaling Network and Its Extensions</a>.<br>
 		Mingqing Xiao, Shuxin Zheng, <b>Chang Liu</b>*, Zhouchen Lin*, Tie-Yan Liu.
 		<i>International Journal of Computer Vision</i>, 2023.<br>
-		[<a href="https://rdcu.be/cXhOr">Full-text access</a>]
-		[<a href="https://arxiv.org/abs/2210.04188">arXiv</a>]
-		[<a href="https://github.com/pkuxmq/Invertible-Image-Rescaling">Code</a>]
-		[<a href="./bibtex/xiao2023invertible.bib">BibTeX</a>]
+		[<a href="https://rdcu.be/cXhOr"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Full-text access</a>]
+		[<a href="https://arxiv.org/abs/2210.04188"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/pkuxmq/Invertible-Image-Rescaling"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./bibtex/xiao2023invertible.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
 </ul>
 
@@ -414,42 +554,42 @@
 		<!--(free <a href="https://authors.elsevier.com/a/1foRZcbiTAXmg">access link</a> before Nov. 12).<br>-->
 		<b>Chang Liu</b>, Jun Zhu.
 		<i>Advancements in Bayesian Methods and Implementation</i>, in Handbook of Statistics (vol. 47), Elsevier, 2022.<br>
-		[<a href="./static/Geometry in sampling methods - public.pdf">Full-text paper</a>]
-		[<a href="./bibtex/liu2022geometry.bib">BibTeX</a>]
+		[<a href="./static/Geometry in sampling methods - public.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Full-text paper</a>]
+		[<a href="./bibtex/liu2022geometry.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
 	<li>
 		<a href="https://openreview.net/forum?id=lCPOHiztuw">Direct Molecular Conformation Generation</a>.<br>
 		Jinhua Zhu, Yingce Xia*, <b>Chang Liu</b>*, Lijun Wu, Shufang Xie, Yusong Wang, Tong Wang, Tao Qin, Wengang Zhou, Houqiang Li, Haiguang Liu, Tie-Yan Liu.
 		<i>Transactions on Machine Learning Research (TMLR)</i>, 2022.<br>
-		[<a href="https://openreview.net/pdf?id=lCPOHiztuw">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2202.01356">arXiv</a>]
-		[<a href="https://github.com/DirectMolecularConfGen/DMCG">Code</a>]
-		[<a href="./bibtex/zhu2022direct.bib">BibTeX</a>]
+		[<a href="https://openreview.net/pdf?id=lCPOHiztuw"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2202.01356"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/DirectMolecularConfGen/DMCG"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./bibtex/zhu2022direct.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
 	<li>
 		<a href="https://pubs.acs.org/doi/abs/10.1021/acs.est.1c08337">Rapid Inference of Nitrogen Oxide Emissions Based on a Top-Down Method with a Physically Informed Variational Autoencoder</a>.<br>
 		Jia Xing, Siwei Li, Shuxin Zheng, <b>Chang Liu</b>, Xiaochun Wang, Lin Huang, Ge Song, Yihan He, Shuxiao Wang, Shovan Kumar Sahu, Jia Zhang, Jiang Bian, Yun Zhu, Tie-Yan Liu, Jiming Hao.
 		<i>Environmental Science & Technology</i>, 2022.
-		[<a href="./bibtex/xing2022rapid.bib">BibTeX</a>]
+		[<a href="./bibtex/xing2022rapid.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
     <li>
 		<a href="https://arxiv.org/abs/2106.12506">Sampling with Mirrored Stein Operators</a>.<br>
 		Jiaxin Shi, <b>Chang Liu</b>, Lester Mackey.
 		<i>International Conference on Learning Representations (ICLR; <b>Spotlight, Top 2.7%</b>)</i>, 2022.<br>
-		[<a href="https://arxiv.org/pdf/2106.12506.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2106.12506">arXiv</a>]
-		[<a href="https://github.com/thjashin/mirror-stein-samplers">Code</a>]
-		[<a href="https://thjashin.github.io/talks/mirror-stein-samplers.pdf">Slides</a>]
-		[<a href="./bibtex/shi2022sampling.bib">BibTeX</a>]
+		[<a href="https://arxiv.org/pdf/2106.12506.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2106.12506"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/thjashin/mirror-stein-samplers"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="https://thjashin.github.io/talks/mirror-stein-samplers.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./bibtex/shi2022sampling.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://arxiv.org/abs/2106.06406">PriorGrad: Improving Conditional Denoising Diffusion Models with Data-Dependent Adaptive Prior</a>.<br>
 		Sang-gil Lee, Heeseung Kim, Chaehun Shin, Xu Tan, <b>Chang Liu</b>, Qi Meng, Tao Qin, Wei Chen, Sungroh Yoon, Tie-Yan Liu.
 		<i>International Conference on Learning Representations (ICLR)</i>, 2022.<br>
-		[<a href="https://arxiv.org/pdf/2106.06406.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2106.06406">arXiv</a>]
+		[<a href="https://arxiv.org/pdf/2106.06406.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2106.06406"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
 		[Code: <a href="https://github.com/microsoft/NeuralSpeech/tree/master/PriorGrad-vocoder">vocoder</a>, <a href="https://github.com/microsoft/NeuralSpeech/tree/master/PriorGrad-acoustic">acoustic model</a>]
-		[<a href="./bibtex/lee2022priorgrad.bib">BibTeX</a>]
+		[<a href="./bibtex/lee2022priorgrad.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://arxiv.org/abs/2203.04810">Benchmarking Graphormer on Large-Scale Molecular Modeling Datasets</a>.
@@ -464,28 +604,28 @@
 		<b>Chang Liu</b>*, Haoyue Tang, Tao Qin, Jintao Wang, Tie-Yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2021.<br>
 		<!--<i>arXiv prepint</i>, 2021. <b>(Updated Aug. 3, 2021)</b><br>-->
-		[<a href="./cygen/cygen.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2106.15962">arXiv</a>]
-		[<a href="https://github.com/changliu00/cygen">Code</a>]
-		[<a href="./cygen/cygen-slides.pdf">Slides</a>]
-		[<a href="./cygen/cygen-poster.pdf">Poster</a>]
-		[<a href="https://recorder-v3.slideslive.com/?share=52410&s=7530b180-ebd9-4e7b-9f11-37503185c774">Video</a>]
-		[<a href="https://mp.weixin.qq.com/s/8XyECFy6twCFTnT4g0lsoQ">Media (Chinese)</a>]
-		[<a href="./bibtex/liu2021generative.bib">BibTeX</a>]
+		[<a href="./cygen/cygen.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2106.15962"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/cygen"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./cygen/cygen-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./cygen/cygen-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="https://recorder-v3.slideslive.com/?share=52410&s=7530b180-ebd9-4e7b-9f11-37503185c774"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></span>Video</a>]
+		[<a href="https://mp.weixin.qq.com/s/8XyECFy6twCFTnT4g0lsoQ"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-newspaper"></i></span>Media (Chinese)</a>]
+		[<a href="./bibtex/liu2021generative.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://papers.nips.cc/paper/2021/hash/310614fca8fb8e5491295336298c340f-Abstract.html">Learning Causal Semantic Representation for Out-of-Distribution Prediction</a>.<br>
 		<b>Chang Liu</b>*, Xinwei Sun, Jindong Wang, Haoyue Tang, Tao Li, Tao Qin, Wei Chen, Tie-Yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2021.<br>
 		<!--<i>arXiv prepint</i>, 2020. <b>(Updated Jun. 17, 2021)</b><br>-->
-		[<a href="./causupv/causupv.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2011.01681">arXiv</a>]
-		[<a href="https://github.com/changliu00/causal-semantic-generative-model">Code</a>]
-		[<a href="./causupv/causupv-slides.pdf">Slides</a>]
-		[<a href="./causupv/causupv-poster.pdf">Poster</a>]
-		[<a href="https://recorder-v3.slideslive.com/?share=52713&s=7a03cf16-4993-4e27-8502-7461239c487d">Video</a>]
-		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw">Media (Chinese)</a>]
-		[<a href="./bibtex/liu2021learning.bib">BibTeX</a>]
+		[<a href="./causupv/causupv.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2011.01681"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/causal-semantic-generative-model"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./causupv/causupv-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./causupv/causupv-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="https://recorder-v3.slideslive.com/?share=52713&s=7a03cf16-4993-4e27-8502-7461239c487d"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></span>Video</a>]
+		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-newspaper"></i></span>Media (Chinese)</a>]
+		[<a href="./bibtex/liu2021learning.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://papers.nips.cc/paper/2021/hash/8c6744c9d42ec2cb9e8885b54ff744d0-Abstract.html">Recovering Latent Causal Factor for Generalization to Distributional Shifts</a>.
@@ -493,26 +633,26 @@
 		Xinwei Sun, Botong Wu, Xiangyu Zheng, <b>Chang Liu</b>, Wei Chen, Tao Qin, Tie-yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2021.<br>
 		<!--<i>arXiv prepint</i>, 2020. <b>(Updated Apr. 27, 2021)</b>-->
-		[<a href="./causupv/LaCIM-main.pdf">Paper</a>]
-		[<a href="./causupv/LaCIM-supp.pdf">Appendix</a>]
-		[<a href="https://arxiv.org/abs/2011.02203">arXiv</a>]
-		[<a href="https://github.com/wubotong/LaCIM">Code</a>]
-		[<a href="./causupv/LaCIM-slides.pdf">Slides</a>]
-		[<a href="./causupv/LaCIM-poster.png">Poster</a>]
-		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw">Media (Chinese)</a>]
-		[<a href="./bibtex/sun2021recovering.bib">BibTeX</a>]
+		[<a href="./causupv/LaCIM-main.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="./causupv/LaCIM-supp.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Appendix</a>]
+		[<a href="https://arxiv.org/abs/2011.02203"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/wubotong/LaCIM"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./causupv/LaCIM-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./causupv/LaCIM-poster.png"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-newspaper"></i></span>Media (Chinese)</a>]
+		[<a href="./bibtex/sun2021recovering.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://papers.nips.cc/paper/2021/hash/17a3120e4e5fbdc3cb5b5f946809b06a-Abstract.html">Object-Aware Regularization for Addressing Causal Confusion in Imitation Learning</a>.<br>
 		Jongjin Park†, Younggyo Seo†, <b>Chang Liu</b>, Li Zhao, Tao Qin, Jinwoo Shin, Tie-Yan Liu.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2021.<br>
-		[<a href="./oreo/oreo.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2110.14118">arXiv</a>]
-		[<a href="https://github.com/alinlab/oreo">Code</a>]
-		[<a href="./oreo/oreo-slides.pdf">Slides</a>]
-		[<a href="./oreo/oreo-poster.png">Poster</a>]
-		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw">Media (Chinese)</a>]
-		[<a href="./bibtex/park2021object.bib">BibTeX</a>]
+		[<a href="./oreo/oreo.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2110.14118"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/alinlab/oreo"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./oreo/oreo-slides.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./oreo/oreo-poster.png"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="https://mp.weixin.qq.com/s/kIC2edEnpf52DyG3If9UDw"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-newspaper"></i></span>Media (Chinese)</a>]
+		[<a href="./bibtex/park2021object.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://www.ijcai.org/proceedings/2021/628">Generalizing to Unseen Domains: A Survey on Domain Generalization</a>.<br>
@@ -520,11 +660,11 @@
 		<i>International Joint Conference on Artificial Intelligence (IJCAI; survey track)</i>, 2021.<br>
 		<a href="https://ieeexplore.ieee.org/abstract/document/9782500">New long version</a> published at <i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>, 2022.<br>
 		<!--Jindong Wang, Cuiling Lan, <b>Chang Liu</b>, Yidong Ouyang, Tao Qin, Wang Lu, Yiqiang Chen, Wenjun Zeng, Philip S. Yu.-->
-		<!--[<a href="./dg_survey/dg_survey.pdf">Paper</a>]-->
-		[<a href="./dg_survey/DG_survey_TKDE22.pdf">Paper</a>]
-		[<a href="https://arxiv.org/abs/2103.03097">arXiv</a>]
-		<!--[<a href="./bibtex/wang2021generalizing.bib">BibTeX</a>]-->
-		[<a href="./bibtex/wang2022generalizing.bib">BibTeX</a>]
+		<!--[<a href="./dg_survey/dg_survey.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]-->
+		[<a href="./dg_survey/DG_survey_TKDE22.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="https://arxiv.org/abs/2103.03097"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		<!--[<a href="./bibtex/wang2021generalizing.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]-->
+		[<a href="./bibtex/wang2022generalizing.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 </ul>
 
@@ -534,22 +674,22 @@
 		<a href="https://link.springer.com/chapter/10.1007/978-3-030-58452-8_8">Invertible Image Rescaling</a>.<br>
 		Mingqing Xiao, Shuxin Zheng*, <b>Chang Liu</b>*, Yaolong Wang, Di He, Guolin Ke, Jiang Bian, Zhouchen Lin, Tie-Yan Liu.
 		<i>European Conference on Computer Vision (ECCV; <b>Oral</b>)</i>, 2020.<br>
-		[<a href="./irn/IRN_ECCV2020.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/2005.05650">arXiv</a>]
-		[<a href="https://github.com/pkuxmq/Invertible-Image-Rescaling">Code</a>]
-		[<a href="./bibtex/xiao2020invertible.bib">BibTeX</a>]
+		[<a href="./irn/IRN_ECCV2020.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/2005.05650"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/pkuxmq/Invertible-Image-Rescaling"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./bibtex/xiao2020invertible.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="http://proceedings.mlr.press/v119/zhu20b.html">Variance Reduction and Quasi-Newton for Particle-Based Variational Inference</a>.<br>
 		Michael H. Zhu*, <b>Chang Liu</b>*, Jun Zhu*.
 		<i>International Conference on Machine Learning (ICML)</i>, 2020.<br>
-		[<a href="./vrqn-parvi/vrqn-parvi-main.pdf">Paper</a>]
-		[<a href="./vrqn-parvi/vrqn-parvi-supp.pdf">Appendix</a>]
-		[<a href="./vrqn-parvi/code.zip">Code</a>]
-		[<a href="./vrqn-parvi/vrqn-parvi-beamer.pdf">Slides</a>]
-		<!-- [<a href="./vrqn-parvi/vrqn-parvi-poster.pdf">Poster</a>] -->
-		[<a href="https://papertalk.org/papertalks/6162">Video</a>]
-		[<a href="./bibtex/zhu2020variance.bib">BibTeX</a>]
+		[<a href="./vrqn-parvi/vrqn-parvi-main.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="./vrqn-parvi/vrqn-parvi-supp.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Appendix</a>]
+		[<a href="./vrqn-parvi/code.zip"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./vrqn-parvi/vrqn-parvi-beamer.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		<!-- [<a href="./vrqn-parvi/vrqn-parvi-poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>] -->
+		[<a href="https://papertalk.org/papertalks/6162"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></span>Video</a>]
+		[<a href="./bibtex/zhu2020variance.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 </ul>
 
@@ -559,31 +699,31 @@
 		<a href="http://proceedings.mlr.press/v97/liu19j.html">Understanding MCMC Dynamics as Flows on the Wasserstein Space</a>.<br>
 		<b>Chang Liu</b>, Jingwei Zhuo, Jun Zhu.
 		<i>International Conference on Machine Learning (ICML)</i>, 2019.<br>
-		[<a href="./hgf/hgf.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/1902.00282">arXiv</a>]
-		[<a href="https://github.com/changliu00/FGH-flow">Code</a>]
-		[<a href="./hgf/hgf_beamer.pdf">Slides</a>]
-		[<a href="./hgf/hgf_poster.pdf">Poster</a>]
-		[<a href="./bibtex/liu2019understanding_b.bib">BibTeX</a>]
+		[<a href="./hgf/hgf.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/1902.00282"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/FGH-flow"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./hgf/hgf_beamer.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./hgf/hgf_poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/liu2019understanding_b.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="http://proceedings.mlr.press/v97/liu19i.html">Understanding and Accelerating Particle-Based Variational Inference</a>.<br>
 		<b>Chang Liu</b>, Jingwei Zhuo, Pengyu Cheng, Ruiyi Zhang, Jun Zhu, Lawrence Carin.
 		<i>International Conference on Machine Learning (ICML)</i>, 2019.<br>
-		[<a href="./awgf/AWGF.pdf">Paper & Appendix</a>]
-		[<a href="https://arxiv.org/abs/1807.01750">arXiv</a>]
-		[<a href="https://github.com/changliu00/AWGF">Code</a>]
-		[<a href="./awgf/AWGF_beamer.pdf">Slides</a>]
-		[<a href="./awgf/AWGF_poster.pdf">Poster</a>]
-		[<a href="./bibtex/liu2019understanding_a.bib">BibTeX</a>]
+		[<a href="./awgf/AWGF.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Paper & Appendix</a>]
+		[<a href="https://arxiv.org/abs/1807.01750"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/AWGF"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./awgf/AWGF_beamer.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./awgf/AWGF_poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/liu2019understanding_a.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 	<li>
 		<a href="http://proceedings.mlr.press/v97/tao19a.html">Variational Annealing of GANs: A Langevin Perspective</a>.<br>
 		Chenyang Tao, Shuyang Dai, Liqun Chen, Ke Bai, Junya Chen, <b>Chang Liu</b>, Ruiyi Zhang, Georgiy Bobashev, Lawrence Carin.
 		<i>International Conference on Machine Learning (ICML)</i>, 2019.<br>
-		[<a href="http://people.ee.duke.edu/~lcarin/lgan-icml.pdf">Paper</a>]
-		[<a href="http://people.ee.duke.edu/~lcarin/lgan-supp-icml.pdf">Appendix</a>]
-		[<a href="./bibtex/tao2019variational.bib">BibTeX</a>]
+		[<a href="http://people.ee.duke.edu/~lcarin/lgan-icml.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="http://people.ee.duke.edu/~lcarin/lgan-supp-icml.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Appendix</a>]
+		[<a href="./bibtex/tao2019variational.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 </ul>
 
@@ -593,43 +733,43 @@
 		<a href="http://bayesiandeeplearning.org/2018/papers/53.pdf">Straight-Through Estimator as Projected Wasserstein Gradient Flow</a>.<br>
 		Pengyu Cheng, <b>Chang Liu</b>, Chunyuan Li, Dinghan Shen, Ricardo Henao, Lawrence Carin.
 		<i>NeurIPS 2018 Bayesian Deep Learning Workshop</i>, 2018.<br>
-		[<a href="http://bayesiandeeplearning.org/2018/papers/53.pdf">Paper</a>]
-		[<a href="https://arxiv.org/abs/1910.02176">arXiv</a>]
-		[<a href="./bibtex/cheng2018straight.bib">BibTeX</a>]
+		[<a href="http://bayesiandeeplearning.org/2018/papers/53.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="https://arxiv.org/abs/1910.02176"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./bibtex/cheng2018straight.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="http://proceedings.mlr.press/v80/zhuo18a.html">Message Passing Stein Variational Gradient Descent</a>.<br>
 		Jingwei Zhuo, <b>Chang Liu</b>, Jiaxin Shi, Jun Zhu, Ning Chen, Bo Zhang.
 		<i>International Conference on Machine Learning (ICML)</i>, 2018.<br>
-		[<a href="http://ml.cs.tsinghua.edu.cn/~jingwei/paper/icml18/mpsvgd.pdf">Paper</a>]
-		[<a href="http://ml.cs.tsinghua.edu.cn/~jingwei/paper/icml18/supplement-mpsvgd.pdf">Appendix</a>]
-		[<a href="https://arxiv.org/abs/1711.04425">arXiv</a>]
-		[<a href="./bibtex/zhuo2018message.bib">BibTeX</a>]
+		[<a href="http://ml.cs.tsinghua.edu.cn/~jingwei/paper/icml18/mpsvgd.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="http://ml.cs.tsinghua.edu.cn/~jingwei/paper/icml18/supplement-mpsvgd.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Appendix</a>]
+		[<a href="https://arxiv.org/abs/1711.04425"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="./bibtex/zhuo2018message.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
     <li>
 		<a href="https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17275">Riemannian Stein Variational Gradient Descent for Bayesian Inference</a>.<br>
 		<b>Chang Liu</b>, Jun Zhu.
 		<i>AAAI Conference on Artificial Intelligence (AAAI)</i>, 2018.<br>
-		[<a href="./rsvgd/Liu-Zhu.pdf">Paper</a>]
-		[<a href="./rsvgd/Liu-Zhu-appendix.pdf">Appendix</a>]
-		[<a href="https://arxiv.org/abs/1711.11216">arXiv</a>]
-		[<a href="https://github.com/changliu00/Riem-SVGD">Code</a>]
-		<!-- [<a href="./rsvgd/">Code</a>] -->
-		[<a href="./rsvgd/rsvgd_beamer.pdf">Slides</a>]
-		[<a href="./rsvgd/rsvgd_poster.pdf">Poster</a>]
-		[<a href="./bibtex/liu2018riemannian.bib">BibTeX</a>]
+		[<a href="./rsvgd/Liu-Zhu.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="./rsvgd/Liu-Zhu-appendix.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Appendix</a>]
+		[<a href="https://arxiv.org/abs/1711.11216"><span class="link-icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span>arXiv</a>]
+		[<a href="https://github.com/changliu00/Riem-SVGD"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		<!-- [<a href="./rsvgd/"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>] -->
+		[<a href="./rsvgd/rsvgd_beamer.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./rsvgd/rsvgd_poster.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/liu2018riemannian.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
     </li>
 	<li>
 		<!--<a href="http://papers.nips.cc/paper/6281-stochastic-gradient-geodesic-mcmc-methods">-->
 		<a href="https://proceedings.neurips.cc/paper/2016/hash/77f959f119f4fb2321e9ce801e2f5163-Abstract.html">Stochastic Gradient Geodesic MCMC Methods</a>.<br>
 		<b>Chang Liu</b>, Jun Zhu, Yang Song.
 		<i>Neural Information Processing Systems (NeurIPS)</i>, 2016.<br>
-		[<a href="./sggmcmc-sam/sggmc_nips2016.pdf">Paper</a>]
-		[<a href="./sggmcmc-sam/sggmc_supp_nips2016.pdf">Appendix</a>]
-		[<a href="https://github.com/changliu00/SG-Geod-MCMC">Code</a>]
-		[<a href="./sggmcmc-sam/sggmc_beamer_nips2016.pdf">Slides</a>]
-		[<a href="./sggmcmc-sam/sggmc_poster_nips2016.pdf">Poster</a>]
-		[<a href="./bibtex/liu2016stochastic.bib">BibTeX</a>]
+		[<a href="./sggmcmc-sam/sggmc_nips2016.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-pdf"></i></span>Paper</a>]
+		[<a href="./sggmcmc-sam/sggmc_supp_nips2016.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Appendix</a>]
+		[<a href="https://github.com/changliu00/SG-Geod-MCMC"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>Code</a>]
+		[<a href="./sggmcmc-sam/sggmc_beamer_nips2016.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i></span>Slides</a>]
+		[<a href="./sggmcmc-sam/sggmc_poster_nips2016.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></span>Poster</a>]
+		[<a href="./bibtex/liu2016stochastic.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 	</li>
 </ul>
 
@@ -644,8 +784,10 @@
 		<!--Yaolong Wang, Mingqing Xiao, <b>Chang Liu</b>, Shuxin Zheng, Tie-Yan Liu. 2020.-->
     <!--</li>-->
 <!-- </ul> -->
+	</section>
 
-<h3>Thesis</h3>
+	<section class="research-tab-panel" id="research-panel-thesis" role="tabpanel" aria-labelledby="research-tab-thesis" hidden>
+<!-- <h3>Thesis</h3> -->
 <ul>
 	<li>
 		Doctoral Dissertation: <a href="./static/PhD-Dissertation_Chang-Liu.pdf">A Study on Efficient Bayesian Inference Methods Using Manifold Structures</a> (in Chinese),<br>
@@ -667,8 +809,8 @@
 				<a href="https://doi.org/10.1016/bs.host.2022.07.004">Geometry in sampling methods: A review on manifold MCMC and particle-based variational inference methods</a>
 				(free <a href="https://authors.elsevier.com/a/1foRZcbiTAXmg">access link</a> before Nov. 12).
 				<i>Handbook of Statistics</i> (vol. 46), Elsevier, 2022.<br>
-				[<a href="./static/Geometry in sampling methods - public.pdf">Full-text paper</a>]
-				[<a href="./bibtex/liu2022geometry.bib">BibTeX</a>]
+				[<a href="./static/Geometry in sampling methods - public.pdf"><span class="link-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>Full-text paper</a>]
+				[<a href="./bibtex/liu2022geometry.bib"><span class="link-icon" aria-hidden="true"><i class="fa-solid fa-quote-right"></i></span>BibTeX</a>]
 			</li>
 		</ul>
 	</li>
@@ -676,6 +818,9 @@
 		Bachelor Thesis: <a href="./static/Thesis_Chang-Liu.pdf">Maximum Entropy Discrimination Latent Dirichlet Allocation with Determinantal Point Process Prior</a> (in Chinese), supervised by <a href="http://ml.cs.tsinghua.edu.cn/~jun/">Prof. Jun Zhu</a>, 2014.
 	</li>
 </ul>
+	</section>
+</div>
+</div>
 
 <h2>Talks & Notes</h2>
 <ul>
@@ -687,7 +832,7 @@
 	</li>
 	<li style="margin: 5px 5px">
 		Generative Model [<a href="./static/generative-models-2019.pdf">2019</a>][<a href="./static/generative-models-2022.pdf">2022</a>][<a href="./static/generative-models-2023.pdf">2023</a>][<a href="./static/generative-models-2024.pdf">2024</a>].<br>
-		<img src="./static/ebm-nobel.png" border="0" width="800">
+		<!-- <img src="./static/ebm-nobel.png" border="0" width="800"> -->
 	</li>
 	<li style="margin: 5px 5px">
 		<a href="./static/causality-basics.pdf">Causality Basics</a> (based on Peters et al., 2017, "Elements of Causal Inference").
@@ -729,16 +874,16 @@
 <h2>Academic Service</h2>
 <ul>
 	<li style="margin: 5px 5px">
-		Conference Area Chair: NeurIPS (2022-), ICML (2023-), ICLR (2023-).
+		<b>Conference Area Chair</b>: NeurIPS (2022-), ICML (2023-), ICLR (2023-).
 	</li>
 	<li style="margin: 5px 5px">
-		Action Editor: Transactions on Machine Learning Research (TMLR) (2025-).
+		<b>Action Editor</b>: Transactions on Machine Learning Research (TMLR) (2025-).
 	</li>
 	<li style="margin: 5px 5px">
-		Conference Reviewer: NeurIPS (2016,2018-2021), ICML (2019-2022), ICLR (2021-2022), AAAI (2020-2021), UAI (2019), IJCAI (2021), AISTATS (2023). <b>ICML 2020 top-33% reviewer</b>.
+		<b>Conference Reviewer</b>: NeurIPS (2016,2018-2021), ICML (2019-2022), ICLR (2021-2022), AAAI (2020-2021), UAI (2019), IJCAI (2021), AISTATS (2023). <i>ICML 2020 top-33% reviewer</i>.
 	</li>
 	<li style="margin: 5px 5px">
-		Journal Reviewer: Nature Machine Intelligence (2025), IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (2020-2025), IEEE Transactions on Intelligent Systems and Technology (TIST) (2019), IEEE Transactions on the Web (2019).
+		<b>Journal Reviewer</b>: Nature Machine Intelligence (2025), IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (2020-2025), IEEE Transactions on Intelligent Systems and Technology (TIST) (2019), IEEE Transactions on the Web (2019).
 	</li>
 </ul>
 
@@ -756,12 +901,12 @@
 	<li style="margin: 5px 5px">
 		Advanced Machine Learning (generative model section), graduate course, <!--jointly hosted by Microsoft Research Asia and--> Department of Electronic Engineering, Tsinghua University. 2019 fall, 2021 spring, 2022 spring.
 	</li>
-	<li style="margin: 5px 5px">
-		Teaching Assistant, <a href="https://dukekunshan.edu.cn/en/events/machine-learning-2017">Duke-Tsinghua Machine Learning Summer School</a>. Aug. 2016.
-	</li>
-	<li style="margin: 5px 5px">
-		Teaching Assistant, <i>Advanced Calculus</i> (undergraduate course, hosting exercise classes), instructed by <a href="https://www.tcm.tsinghua.edu.cn/info/1003/1032.htm">Prof. Yinghua Ai</a>, Department of Mathematical Sciences, Tsinghua University. Sep. 2014 - Jan. 2015.
-	</li>
+	<!-- <li style="margin: 5px 5px"> -->
+	<!--     Teaching Assistant, <a href="https://dukekunshan.edu.cn/en/events/machine-learning-2017">Duke-Tsinghua Machine Learning Summer School</a>. Aug. 2016. -->
+	<!-- </li> -->
+	<!-- <li style="margin: 5px 5px"> -->
+	<!--     Teaching Assistant, <i>Advanced Calculus</i> (undergraduate course, hosting exercise classes), instructed by <a href="https://www.tcm.tsinghua.edu.cn/info/1003/1032.htm">Prof. Yinghua Ai</a>, Department of Mathematical Sciences, Tsinghua University. Sep. 2014 - Jan. 2015. -->
+	<!-- </li> -->
 </ul>
 
 <!-- <h2>Honors &amp; Awards</h2> -->
@@ -810,5 +955,52 @@
 
 </div>
 
-</body></html>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.querySelectorAll('.research-tabs').forEach(function (tabs) {
+			var tabButtons = Array.prototype.slice.call(tabs.querySelectorAll('[role="tab"]'));
+			var tabPanels = Array.prototype.slice.call(tabs.querySelectorAll('[role="tabpanel"]'));
 
+			function activateTab(tab) {
+				tabButtons.forEach(function (button) {
+					var isActive = button === tab;
+					button.classList.toggle('active', isActive);
+					button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+					button.setAttribute('tabindex', isActive ? '0' : '-1');
+				});
+
+				tabPanels.forEach(function (panel) {
+					var isActive = panel.id === tab.getAttribute('aria-controls');
+					panel.classList.toggle('active', isActive);
+					panel.hidden = !isActive;
+				});
+			}
+
+			tabButtons.forEach(function (button, index) {
+				button.addEventListener('click', function () {
+					activateTab(button);
+				});
+
+				button.addEventListener('keydown', function (event) {
+					var nextIndex = index;
+					if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+						nextIndex = (index + 1) % tabButtons.length;
+					} else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+						nextIndex = (index - 1 + tabButtons.length) % tabButtons.length;
+					} else if (event.key === 'Home') {
+						nextIndex = 0;
+					} else if (event.key === 'End') {
+						nextIndex = tabButtons.length - 1;
+					} else {
+						return;
+					}
+					event.preventDefault();
+					tabButtons[nextIndex].focus();
+					activateTab(tabButtons[nextIndex]);
+				});
+			});
+		});
+	});
+</script>
+
+</body></html>
